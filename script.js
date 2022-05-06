@@ -62,7 +62,7 @@ function isValidate(name, email, num) {
 }
 
 function isValidName(name) {
-    let nameRegex = /^[a-zA-Z ]*$/;
+    let nameRegex =//^[a-zA-Z ]*$/;
     if (name === "") {
         alert("Please Enter Your Name");
         return false
@@ -77,7 +77,7 @@ function isValidName(name) {
 
 }
 function isValidEmail(email) {
-    let emailRegex = /^\w+@[a-zA-Z_.]+?\.[a-zA-Z]{2,3}$/;
+    let emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if (email === "") {
         alert("Please Enter Email");
         return false;
